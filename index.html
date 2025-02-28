@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nova Eco-Packaging</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- You can add any fonts or additional libraries here -->
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>Nova Eco-Packaging</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#landing">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Landing Section -->
+  <section id="landing">
+    <div class="container landing-container">
+      <h2>Welcome to Nova Eco-Packaging</h2>
+      <p>
+        We provide eco-friendly packaging solutions that help you move away from harmful plastics.
+      </p>
+      <a href="#products" class="btn">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        NOVA-ECO PACKAGING (U) LTD is a youth-run start-up conceived in 2019
+         to innovate affordable and environmentally friendly packaging solutions, especially for Small and 
+         Medium Enterprises (SMEs). Since then, we have evolved from a small informal entity into a formally established business.
+      </p>
+      <p>
+        Our dedicated production facility enables us to innovate 
+        better products, serve our customers more effectively, and further 
+        our vision of transforming the packaging industry. We prioritize innovation 
+        and sustainability, empowering businesses and individuals to make a positive and 
+        lasting impact on the environment.
+      </p>
+      <p>
+        We are striving to become the leading provider of 
+        eco-packaging solutions in the region, fostering a culture 
+        of innovation and sustainability, and inspiring a national 
+        movement towards a waste-free future.
+      </p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-item">
+          <img src="images/product1.jpg" alt="Eco-Friendly Bag" />
+          <h3>Eco-Friendly Bag</h3>
+          <p>Reusable bag made from natural fibers.</p>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item">
+          <img src="images/product2.jpg" alt="Biodegradable Container" />
+          <h3>Biodegradable Container</h3>
+          <p>Sustainable containers that decompose naturally.</p>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item">
+          <img src="images/product3.jpg" alt="Recycled Paper Packaging" />
+          <h3>Recycled Paper Packaging</h3>
+          <p>Eco-friendly packaging crafted from recycled paper.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <section id="willow">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> ecofairpackaging@gmail.com</p>
+        <p><strong>Telephone/Whatsapp:</strong> 0764684872</p>
+        <p><strong>Mobile:</strong> 0779526240, 0705746439, 0704561630</p>
+        <p><strong>Instagram:</strong> nova_ecopackaging.ug</p>
+        <p><strong>Whatsapp channel:</strong> NOVA-ECO PACKAGINGS (U) LTD</p>
+        <p><strong>Location:</strong> Nasser road, Ddembelyo house 2nd floor
+                      Rwebikoona Market No.61 Mbarara
+        </p>
+      </section>
+      <form action="send_email.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Nova Eco-Packaging. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
