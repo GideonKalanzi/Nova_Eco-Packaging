@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nova-Eco Packaging</title>
   <link rel="stylesheet" href="styles.css" />
   <!-- You can add any fonts or additional libraries here -->
@@ -14,7 +14,8 @@
       <div class="logo">
         <h1>Nova-Eco Packaging</h1>
       </div>
-      <nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav id="navbar">
         <ul>
           <li><a href="#landing">Home</a></li>
           <li><a href="#about">About Us</a></li>
@@ -157,5 +158,16 @@
       <p>&copy; 2025 Nova Eco-Packaging. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('navbar').querySelector('ul');
+  
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+  
+
 </body>
 </html>

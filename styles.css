@@ -202,11 +202,47 @@
     
     nav ul {
       flex-direction: column;
-      margin-top: 10px;
+      margin-top: 10px; 
+      display: none; 
+      gap: 10px;
     }
     
     nav ul li {
       margin: 10px 0;
     }
+
+    nav ul.show {
+      display: flex;
+    }
+
+    .landing-container h2 {
+      font-size: 2rem;
+    }
+  
+    .landing-container p {
+      font-size: 1rem;
+    }
+  
+    #about, #products, #landing {
+      padding: 80px 15px;
+    }
+  
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    #willow {
+      padding-left: 0;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
   }
   
+  img {
+    max-width:100%;
+    height: auto;
+  }
+
