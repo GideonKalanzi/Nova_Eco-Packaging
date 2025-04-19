@@ -12,7 +12,7 @@
   <header>
     <div class="container header-container">
       <div class="logo">
-        <h1>Nova-Eco Packaging</h1>
+        <h1> <img id="logo" src="images/logo.jpeg" /> PACKAGING</h1>
       </div>
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
       <nav id="navbar">
@@ -29,11 +29,11 @@
   <!-- Landing Section -->
   <section id="landing">
     <div class="container landing-container">
-      <h2>Welcome to Nova-Eco Packaging</h2>
-      <p>
+      <h2 id="slide-heading" >Welcome to Nova-Eco Packaging</h2>
+      <p id="slide-text" >
         We provide eco-friendly packaging solutions that help you move away from harmful plastics.
       </p>
-      <a href="#products" class="btn">Explore Products</a>
+      <a id="slide-button" href="#products" class="btn">Explore Products</a>
     </div>
   </section>
 
@@ -43,11 +43,11 @@
       <h2>About Us</h2>
       <p>
         NOVA-ECO PACKAGING (U) LTD is a Ugandan private company conceived in 2019 and incorporated in 2024
-         to innovate affordable and environmentally friendly packaging solutions, especially for Small and 
-         Medium Enterprises (SMEs). Since then, we have evolved from a small informal entity into a formally established business.
+         to innovate affordable and fit-for-purpose eco-friendly packaging solutions. 
+   As a business, we understand the difficulty Small and Medium Enterprises (SMEs) face while sourcing for branded packaging and for this, have dedicated time, research and resources to help SMEs access affordable, innovative and customizable eco-friendly packaging solutions. Since our incpetion, we have evolved from humble beginnings into a formally established business.
       </p>
       <p>
-        Our dedicated production facility enables us to innovate 
+       we are not changing packaging - we're transforming how businesses think about the planet. Our dedicated production facility enables us to innovate 
         better products, serve our customers more effectively, and further 
         our vision of transforming the packaging industry. We prioritize innovation 
         and sustainability, empowering businesses and individuals to make a positive and 
@@ -183,6 +183,44 @@
     toggle.addEventListener('click', () => {
       nav.classList.toggle('show');
     });
+
+    const landing = document.getElementById('landing'); 
+    const heading = document.getElementById('slide-heading');
+    const text = document.getElementById('slide-text');
+  
+  
+  const slides = [
+  {
+      image: 'images/Landing/land 1.jpeg',
+      heading: 'Welcome to the FUTURE of PACKAGING',
+      text: 'Eco-friendly - Affordable - Innovative .'
+    },
+    {
+      image: 'images/Landing/land 2.jpeg',
+      heading: 'Locally made. Globally Minded',
+      text: "Make the switch with US today."
+    },
+    {
+      image: 'images/Landing/land 3.jpeg',
+      heading: 'Solutions for EVERYONE',
+      text: 'Designed to degrade, Built to empower.'
+    }
+  ];
+  let current = 0;
+
+  function updateSlide() {
+    const slide = slides[current];
+    landing.style.backgroundImage = `url('${slide.image}')`;
+    heading.textContent = slide.heading;
+    text.textContent = slide.text;
+
+    current = (current + 1) % slides.length;
+  }
+
+  updateSlide(); // Set initial
+  setInterval(updateSlide, 5000); // Change every 5s
+
+
   </script>
   
 

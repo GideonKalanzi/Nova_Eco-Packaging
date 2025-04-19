@@ -54,12 +54,27 @@
   }
   
   /* Landing Section */
-  #landing {
-    background: url('images/Landing/land 1.jpeg') no-repeat center center/cover;
+  /* #landing {
+    background: url('images/Landing/land 2.jpeg') no-repeat center center/cover;
     color: #000;
     text-align: center;
     padding: 163px 20px;
+  } */
+
+  
+  #landing {
+    position: relative;
+    height: 100vh;
+    color: #000;
+    text-align: center;
+    padding: 163px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
   }
+  
+
   .landing-container h2 {
     font-size: 3rem;
     margin-bottom: 20px;
