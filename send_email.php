@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     // Business email
-    $business_email = 'info@novaeco.com';
+    $business_email = 'ecofairpackaging@gmail.com';
     
     // Prepare email headers
     $headers = "MIME-Version: 1.0\r\n";
